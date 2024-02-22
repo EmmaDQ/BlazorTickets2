@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIBlazorTickets", "UIBlazorTickets\UIBlazorTickets.csproj", "{AA95F26F-9B1B-49D1-A958-0633FE008A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UIBlazorTickets", "UIBlazorTickets\UIBlazorTickets.csproj", "{AA95F26F-9B1B-49D1-A958-0633FE008A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{3146B5F0-4F98-4330-A4BC-8BE20F7BD354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{3146B5F0-4F98-4330-A4BC-8BE20F7BD354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLogic", "AppLogic\AppLogic.csproj", "{6CA35CE8-606E-4471-84E8-2439807C05A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLogic", "AppLogic\AppLogic.csproj", "{6CA35CE8-606E-4471-84E8-2439807C05A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Api", "App.Api\App.Api.csproj", "{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Api", "App.Api\App.Api.csproj", "{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
