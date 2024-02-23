@@ -1,9 +1,14 @@
 ﻿@page "/"
+@using UIBlazorTickets.Services.ResponseServices
+@using UIBlazorTickets.Services.TicketServices
+@inject IResponseService responseService
+@inject ITicketService ticketService
 
 <PageTitle>Home</PageTitle>
 
-<UIBlazorTickets.Pages.Components.Tickets Title="Emma" Description="Hon är den bästa människa som någonsin vandrat dessa stepper."/>
+<div class="list-group">
 
+</div>
 
 <!-- Visa Tickets, hämta och visa alla tickets från databasen vid -->
 <!-- Skapa ett validerat formulär  för att lägga till en ny ticket i databasen-->
