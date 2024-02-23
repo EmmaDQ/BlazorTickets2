@@ -2,19 +2,18 @@
 using Shared.Models;
 using System.Net.Http.Json;
 
-
-namespace UIBlazorTickets.Services.TicketServices
+namespace AppLogic.Services.TicketServices
 {
-    public class TicketService : ITicketService
+    public class TicketServices : ITicketServices
     {
         public HttpClient Client { get; set; } = new()
         {
-            BaseAddress = new Uri("https://localhost:7249/api/")
+            BaseAddress = new Uri("https://localhost:7249/api/BlazorTicket/")
         };
 
         public async Task<List<TicketModel>> GetTickets()
         {
-            var response = await Client.GetAsync("Tickets");
+            var response = await Client.GetAsync("tickets");
 
             if (response.IsSuccessStatusCode)
             {

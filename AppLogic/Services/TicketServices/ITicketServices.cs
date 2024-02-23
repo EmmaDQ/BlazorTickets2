@@ -1,8 +1,8 @@
 ﻿using Shared.Models;
 
-namespace UIBlazorTickets.Services.TicketServices
+namespace AppLogic.Services.TicketServices
 {
-    public interface ITicketService
+    public interface ITicketServices
     {
         public HttpClient Client { get; set; }
 
