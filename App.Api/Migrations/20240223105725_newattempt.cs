@@ -5,7 +5,7 @@
 namespace App.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class initialcreate : Migration
+    public partial class newattempt : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -14,14 +14,15 @@ namespace Shared.Models
 
 	}
 
-	public class TagModel
-	{
-		[Key]
-		public int Id { get; set; }
-		[Column("name")]
-		public string Name { get; set; } = null!;
-		public List<TicketTag> TicketTags { get; set; } = new List<TicketTag>();
-	}
+    public class TagModel
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public string Name { get; set; } = null!;
+        public List<TicketTag> TicketTags { get; set; } = new List<TicketTag>();
+    }
+
 
 	public class TicketModel
 	{
