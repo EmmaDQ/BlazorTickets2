@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Database.DbContext
+namespace Database.Repositories
 {
-    internal class MyDbContext
+    internal class AppDbContext
     {
     }
 }
