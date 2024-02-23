@@ -1,31 +1,32 @@
-﻿using Shared.Models;
-using Shared.Models.Shared.Models;
+﻿using Shared.Models.Shared.Models;
+using static Shared.Models.ApiModels;
 
 namespace AppLogic.Services.ViewServices
 {
-    internal class ViewServices : IViewServices
+    public class ViewServices : IViewServices
     {
-        public ApiModels.TicketAPIModel TicketApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public ApiModels.ResponseAPIModel ResponseApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public TicketAPIModel TicketApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public ResponseAPIModel ResponseApi { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public TicketViewModel TicketView { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public ResponseViewModel ResponseViewModel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Task<List<TicketViewModel>> GetAPIResponse()
-        {
-            foreach (TicketAPIModel)
-        }
-
-        public Task<List<TicketModel>> GetAPITickets()
+        public Task<List<TicketAPIModel>> GetAPIResponse()
         {
             throw new NotImplementedException();
         }
 
-        public Task PostTicket(ApiModels.TicketAPIModel ticket)
+        public Task<List<TicketAPIModel>> GetAPITickets()
+        {
+            throw new NotImplementedException();
+
+        }
+
+        public Task PostTicket(TicketAPIModel ticket)
         {
             throw new NotImplementedException();
         }
 
-        public Task PostTicket(ApiModels.ResponseAPIModel ticket)
+        public Task PostTicket(ResponseAPIModel ticket)
         {
             throw new NotImplementedException();
         }
