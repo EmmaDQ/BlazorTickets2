@@ -1,32 +1,28 @@
-﻿<div class="message">
-    <a href="/response">
+﻿<div class="message ">
+    
         
-        <div class="row justify-content-around message-inside">
-            <div class="col ">
+        <div class="row message-inside ">
+            <div class="col-2 ">
                 <img src="/Images/letter.png" />
             </div>
-            <div class="col ">
-                <div class="justify-content-between" >
+            <div class="col-6 d-flex flex-column justify-content-around align-items-start">
+                <div class="">
                     <h3>@Title</h3>
                     <p>@Description</p>
                     <div class="">
                         <strong>Author: <em>@SubmittedBy</em></strong>
                     </div>
                 </div>
-                
-
+                <InputCheckbox Value=@IsResolved ></InputCheckbox>
+                <div>
+                <NavLink href="/response" class="btn btn-outline-primary">Se responses</NavLink>
+                </div>
+            
             </div>
         </div>
             
+    
 
-
-
-
-
-
-
-        
-    </a>
 </div>
 
 
@@ -40,7 +36,7 @@
     [Parameter]
     public string? SubmittedBy { get; set; }
     [Parameter]
-    public bool? IsResolved { get; set; }
+    public bool IsResolved { get; set; }
 
     //Visa en ticket
 
