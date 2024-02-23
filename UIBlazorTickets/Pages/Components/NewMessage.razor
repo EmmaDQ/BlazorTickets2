@@ -1,4 +1,5 @@
-﻿@using Shared.Models
+
+@using Shared.Models
 @using Shared.Models.Shared.Models
 
 <EditForm Model="NewTicket" OnValidSubmit="HandleSubmit">
@@ -11,6 +12,7 @@
     <Input type="submit" value="Submit new ticket"/>
 
 </EditForm>
+
 
 @code {
     public TicketViewModel NewTicket { get; set; }
