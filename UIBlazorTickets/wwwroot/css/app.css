@@ -103,7 +103,7 @@ code {
 }
 
 .message {
-    width: 80%;
+    width: 100%;
     background-color: blanchedalmond;
     border: solid 5px lightblue;
     margin: 0px;
@@ -114,4 +114,7 @@ code {
     
     color:midnightblue
 
+}
+.message-img {
+    margin:10px;
 }
