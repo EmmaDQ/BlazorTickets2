@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Shared.Models;
 
-namespace Database.Repositories
+namespace Database.DbConnection
 {
     public class AppDbContext : DbContext
     {
