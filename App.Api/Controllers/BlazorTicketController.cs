@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Database.DbConnection;
+using Microsoft.AspNetCore.Mvc;
 using Shared.Models;
 
 namespace App.Api.Controllers
@@ -47,6 +48,13 @@ namespace App.Api.Controllers
                 TicketId = 2,
             }
         };
+
+        private readonly AppDbContext _context;
+
+        public BlazorTicketController(AppDbContext context)
+        {
+            _context = context;
+        }
 
 
         [HttpGet("Tickets")]

@@ -1,6 +1,7 @@
-﻿using Shared.Models;
+﻿
+using Shared.Models;
 
-namespace UIBlazorTickets.Services.ResponseServices
+namespace AppLogic.Services.ResponseServices
 {
     public interface IResponseService
     {

@@ -4,6 +4,10 @@
 @using UIBlazorTickets.Services.TicketServices
 @inject IResponseService responseService
 @inject ITicketService ticketService
+@using AppLogic.Services.ResponseServices
+@using AppLogic.Services.TicketServices
+
+
 
 <PageTitle>Home</PageTitle>
 
@@ -13,16 +17,28 @@
 
 <UIBlazorTickets.Pages.Components.Tickets Title="Rubrik" Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." SubmittedBy="EmmaDQ" IsResolved=false />
 
+<div class="list-group">
+    @foreach(var response in responses)
+    {
+        <h3>@response.Response</h3>
+        <p>@response.SubmittedBy</p>
+    }
+</div>
 
 
 <!-- Visa Tickets, hämta och visa alla tickets från databasen vid -->
 <!-- Skapa ett validerat formulär  för att lägga till en ny ticket i databasen-->
 
 @code {
-    public async void OnInitializedAsync()
+
+    private List<ResponseModel>? responses;
+
+    protected override async Task OnInitializedAsync()
     {
         //Hämta och visa alla tickets från databasen
         //Tickets ska vara sorterade kronologiskt
+
+        responses = await responseService.GetResponses();
     }
 
     

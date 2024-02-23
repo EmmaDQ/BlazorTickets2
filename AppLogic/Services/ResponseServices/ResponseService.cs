@@ -2,13 +2,13 @@
 using Shared.Models;
 using System.Net.Http.Json;
 
-namespace UIBlazorTickets.Services.ResponseServices
+namespace AppLogic.Services.ResponseServices
 {
     public class ResponseService : IResponseService
     {
         public HttpClient Client { get; set; } = new()
         {
-            BaseAddress = new Uri("https://localhost:7249/api/")
+            BaseAddress = new Uri("https://localhost:7249/api/BlazorTicket/")
         };
 
 
