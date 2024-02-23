@@ -12,22 +12,24 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", options =>
-    {
-        options.AllowAnyHeader();
-        options.AllowAnyMethod();
-        options.AllowAnyOrigin();
+	options.AddPolicy("AllowAll", options =>
+	{
+		options.AllowAnyHeader();
+		options.AllowAnyMethod();
+		options.AllowAnyOrigin();
 
-    });
+	});
 });
 
 // Registrera dbcontext 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("BlazorTicketsDb"),
-        b => b.MigrationsAssembly("App.Api")
-    )
+	options.UseSqlServer(
+		builder.Configuration.GetConnectionString("BlazorTicketsDb"),
+		b => b.MigrationsAssembly("App.Api")
+	)
 );
+
+
 
 
 var app = builder.Build();
@@ -35,8 +37,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+	app.UseSwagger();
+	app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

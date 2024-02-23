@@ -1,23 +1,34 @@
 ﻿@page "/"
-@using UIBlazorTickets.Services.ResponseServices
-@using UIBlazorTickets.Services.TicketServices
-@inject IResponseService responseService
-@inject ITicketService ticketService
+@using AppLogic.Services.ResponseServices
+@using AppLogic.Services.TicketServices
+@using Shared.Models
+@inject ITicketServices ticketService;
+@inject IResponseService responseService;
+
 
 <PageTitle>Home</PageTitle>
 
 <div class="list-group">
-
+    @foreach(var response in responses)
+    {
+        <h3>@response.Response</h3>
+        <p>@response.SubmittedBy</p>
+    }
 </div>
 
 <!-- Visa Tickets, hämta och visa alla tickets från databasen vid -->
 <!-- Skapa ett validerat formulär  för att lägga till en ny ticket i databasen-->
 
 @code {
-    public async void OnInitializedAsync()
+
+    private List<ResponseModel>? responses;
+
+    protected override async Task OnInitializedAsync()
     {
         //Hämta och visa alla tickets från databasen
         //Tickets ska vara sorterade kronologiskt
+
+        responses = await responseService.GetResponses();
     }
 
     //Skapa tickets
