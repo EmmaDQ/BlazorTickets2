@@ -1,10 +1,46 @@
-﻿<div>
-    <h3>@Title</h3>
+﻿<div class="message">
+    <a href="/response">
+        
+        <div class="row justify-content-around message-inside">
+            <div class="col ">
+                <img src="/Images/letter.png" />
+            </div>
+            <div class="col ">
+                <div class="justify-content-between" >
+                    <h3>@Title</h3>
+                    <p>@Description</p>
+                    <div class="">
+                        <strong>Author: <em>@SubmittedBy</em></strong>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+            
+
+
+
+
+
+
+
+        
+    </a>
 </div>
+
+
+
 
 @code {
     [Parameter]
     public string? Title { get; set; }
+    [Parameter]
+    public string? Description { get; set; }
+    [Parameter]
+    public string? SubmittedBy { get; set; }
+    [Parameter]
+    public bool? IsResolved { get; set; }
 
     //Visa en ticket
 

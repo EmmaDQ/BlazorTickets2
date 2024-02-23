@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLogic", "AppLogic\AppLog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Api", "App.Api\App.Api.csproj", "{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{B05FD91F-6211-400F-9426-A09F3C2DE544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EAF0F8-F442-4B71-BCC5-DA617EFF0616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05FD91F-6211-400F-9426-A09F3C2DE544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05FD91F-6211-400F-9426-A09F3C2DE544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05FD91F-6211-400F-9426-A09F3C2DE544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05FD91F-6211-400F-9426-A09F3C2DE544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
