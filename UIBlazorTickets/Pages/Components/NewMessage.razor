@@ -2,7 +2,7 @@
 @using Shared.Models
 @using Shared.Models.Shared.Models
 
-<EditForm Model="NewTicket" OnValidSubmit="HandleSubmit">
+@* <EditForm Model="NewTicket" OnValidSubmit="HandleSubmit">
     <DataAnnotationsValidator></DataAnnotationsValidator>
     <ValidationSummary></ValidationSummary>
 
@@ -11,16 +11,16 @@
     <InputText @bind-Value="NewTicket.SubmittedBy" />
     <Input type="submit" value="Submit new ticket"/>
 
-</EditForm>
+</EditForm> *@
 
 
 @code {
-    public TicketViewModel NewTicket { get; set; }
+    // public TicketViewModel NewTicket { get; set; }
 
 
 
 
-    public TicketModel? NewTicket { get; set; }
+    // public TicketModel? NewTicket { get; set; }
 
     public void HandleSubmit()
     {

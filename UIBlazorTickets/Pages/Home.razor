@@ -1,11 +1,9 @@
 ﻿@page "/"
 @using Shared.Models
-@using UIBlazorTickets.Services.ResponseServices
-@using UIBlazorTickets.Services.TicketServices
-@inject IResponseService responseService
-@inject ITicketService ticketService
 @using AppLogic.Services.ResponseServices
 @using AppLogic.Services.TicketServices
+@inject ITicketServices ticketService;
+@inject IResponseService responseService;
 
 
 

@@ -8,7 +8,7 @@ namespace AppLogic.Services.TicketServices
     {
         public HttpClient Client { get; set; } = new()
         {
-            BaseAddress = new Uri("https://localhost:7249/api/BlazorTicket/")
+            BaseAddress = new Uri("https://localhost:7249/")
         };
 
         public async Task<List<TicketModel>> GetTickets()
