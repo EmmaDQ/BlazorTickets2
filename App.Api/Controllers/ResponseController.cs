@@ -17,7 +17,7 @@ namespace App.Api.Controllers
 
 
         [HttpGet("Responses")]
-        public ActionResult<List<TicketModel>> GetAllResponses()
+        public ActionResult<List<ResponseModel>> GetAllResponses()
         {
             var tickets = _responseRepo.GetAll();
 
